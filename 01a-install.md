@@ -53,6 +53,8 @@ Python 3, because it's the newer version
 
 In the Terminal:
 
+`python3 --version`
+
 Python 3.7.1
 
 
