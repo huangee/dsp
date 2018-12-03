@@ -20,7 +20,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`pwd`: prints working directory, or shows current working directory path
+`mkdir sample-dirname`: makes (empty) directory
+`rmdir sample-dirname`: removes (empty) directory: 
+`rm -rf sample-dirname/`: removes directory with all contents
+`rm -rf *`: removes directory contents and keep directory
+`touch sample-filename.txt`: creates (empty) file
+`mv current-filename.txt new-filename.txt`: moves/renames file
+`rm sample-filename.txt`: removes file
+`ls -a`: lists all files, including hidden files
+`cp filename.txt sample-dirname`: copies a file from one directory to another
 
 ---
 
