@@ -93,5 +93,5 @@ The most common usage of `xargs` is to use it with the `find` command. This uses
 ```
 find /tmp -mtime +14 | xargs rm
 ```
-
-
+  
+Helpful video tutorial: https://www.youtube.com/watch?v=8kAB_VgokMY
