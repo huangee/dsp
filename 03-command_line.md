@@ -58,7 +58,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls -d`:	displays only directories.
+`ls -f`:	interprets each name as a directory, not a file.
+`ls -m`:	displays the names as a comma-separated list.
+`ls -R`: displays subdirectories as well.
+`ls -u`:	displays files by the file access time.
 
 ---
 
@@ -66,7 +70,15 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+The xargs command in UNIX is a command line utility for building an execution pipeline from standard input. Whilst tools like grep can accept standard input as a parameter, many other tools cannot. Using xargs allows tools like echo and rm and mkdir to accept standard input as arguments.
 
+How to use xargs
+By default xargs reads items from standard input as separated by blanks and executes a command once for each argument. In the following example standard input is piped to xargs and the mkdir command is run for each argument, creating three folders.
+
+```
+echo 'one two three' | xargs mkdir
+ls
+one two three
+```
  
 
