@@ -70,15 +70,28 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-The xargs command in UNIX is a command line utility for building an execution pipeline from standard input. Whilst tools like grep can accept standard input as a parameter, many other tools cannot. Using xargs allows tools like echo and rm and mkdir to accept standard input as arguments.
+#### What is the xargs command in UNIX?  
 
-How to use xargs
-By default xargs reads items from standard input as separated by blanks and executes a command once for each argument. In the following example standard input is piped to xargs and the mkdir command is run for each argument, creating three folders.
+The `xargs` command in UNIX is a command line utility for building an execution pipeline from standard input. Whilst tools like `grep` can accept standard input as a parameter, many other tools cannot. Using `xargs` allows tools like `echo` and `rm` and `mkdir` to accept standard input as arguments.
+
+#### How to use xargs  
+
+By default `xargs` reads items from standard input as separated by blanks and executes a command once for each argument. In the following example standard input is piped to `xargs` and the `mkdir` command is run for each argument, creating three folders.
 
 ```
 echo 'one two three' | xargs mkdir
 ls
 one two three
 ```
- 
+
+#### How to use xargs with find  
+
+The most common usage of `xargs` is to use it with the `find` command. This uses `find` to search for files or directories and then uses `xargs` to operate on the results. Typical examples of this are removing files, changing the ownership of files or moving files.
+
+`find` and `xargs` can be used together to operate on files that match certain attributes. In the following example files older than two weeks in the temp folder are found and then piped to the `xargs` command which runs the `rm` command on each file and removes them.
+
+```
+find /tmp -mtime +14 | xargs rm
+```
+
 
