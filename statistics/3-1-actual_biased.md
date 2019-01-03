@@ -19,6 +19,8 @@ thinkplot.Config(xlabel='Number of children', ylabel='PMF')
 ```
 Produces this plot for the actual distribution:
 
+![alt text](https://github.com/huangee/dsp/blob/master/statistics/actual.png?raw=true)
+
 The following Python code produces a plot that then also includes the biased distribution:
 ```python
 biased = BiasPmf(pmf, label='biased')
@@ -27,6 +29,8 @@ thinkplot.PrePlot(2)
 thinkplot.Pmfs([pmf, biased])
 thinkplot.Config(xlabel='Number of children', ylabel='PMF')
 ```
+
+![alt text](https://github.com/huangee/dsp/blob/master/statistics/biased.png?raw=true)
 
 ```python
 pmf.Mean()
