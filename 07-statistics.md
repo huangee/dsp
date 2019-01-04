@@ -88,6 +88,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 #### Q5 Response:
 Using [Think Bayes](http://www.greenteapress.com/thinkbayes/thinkbayes.pdf)
+
 The hypotheses are
 
 A: Elvis's birth event was an identical twin event
@@ -127,7 +128,15 @@ p(A|E)
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+#### Q6 Response:
+Within inferential statistics, which attempts to derive information about a population from a sample, there are two schools of thought: Frequentist and Bayesian.
+
+| Frequentist | Bayesian |
+| ------------- | ------------- |
+| Only repeatable random events (like the result of flipping a coin) have probabilities. These probabilities are equal to the long-term frequency of occurrence of the events in question. | Probabilities are a more general concept and can be used to represent the uncertainty in any event or hypothesis. Here, it’s perfectly acceptable to assign probabilities to non-repeatable events, such as Hillary Clinton winning the US presidential race in 2016. |
+| Does not use prior probabilities | Uses prior probabilities and evidence |
+| Uses maximum likelihood estimates to predict new data points, for example, the mean in a normally distributed sample | Has full control over posterior probability distribution to predict new data points |
+| Calculates the probability of the observations given the null hypothesis is true (p-value), and if it is statistically significant (<0.05), accepts the alternative hypothesis as true | Calculates the probability of hypotheses being true |
 
 ---
 
